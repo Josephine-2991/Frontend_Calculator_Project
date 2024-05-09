@@ -1,58 +1,85 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Calculator Project</title>
+    <title>Frontend_Calculator_Project</title>
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <main class="main">
-         <section class="Calculator">
-            <div class="Calculator-1">
-            <table class="Calculator-bg">
+    <!-----------------------------MAIN-STARTS--------------------------------------------------->
+    <main>
+        <!-----------------------------Calculator_first_STARTS--------------------------------------------------->
+        <section class="Calculator_first">
+            <!-----------------------------Calculator_second_STARTS--------------------------------------------------->
+            <div class="Calculator_second">
+                <!-----------------------------table-STARTS--------------------------------------------------->
+                <table class="table">
+                    <tr>
+                        <td colspan="4">
+                            <input type="text" id="output">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button class="button" onclick="display('7')">7</button></td>
+                        <td><button class="button" onclick="display('8')">8</button></td>
+                        <td><button class="button" onclick="display('9')">9</button></td>
+                        <td><button class="button" onclick="display('/')">/</button></td>
+                    </tr>
 
-                <tr>
-                    <td colspan="4"><input type="text" id="output" enabled></td>
-                </tr>
-                
-            <tr >
-                <td><input type="button" class="button" value="7" onclick="output.value +='7' "></td>
-                <td><input type="button" class="button" value="8" onclick="display ('8')"></td>
-                <td><input type="button" class="button" value="9" onclick="display('9')"></td>
-                <td><input type="button" class="button" value="/" onclick="display('/')"></td>
-                 
-            </tr>
-            
-            <tr>
-                <td><input type="button" class="button" value="4" onclick="display('4')"></td>
-                <td><input type="button" class="button" value="5" onclick="display ('5')"></td>
-                <td><input type="button" class="button" value="6" onclick="display('6')"></td>
-                <td><input type="button" class="button" value="*" onclick="display('*')"></td>
-            
-            </tr>
+                    <tr>
+                        <td><button class="button" onclick="display('4')">4</button></td>
+                        <td><button class="button" onclick="display('5')">5</button></td>
+                        <td><button class="button" onclick="display('6')">6</button></td>
+                        <td><button class="button" onclick="display('*')">*</button></td>
+                    </tr>
 
-            <tr>
-                <td><input type="button" class="button" value="1" onclick="display('1')"></td>
-                <td><input type="button" class="button" value="2" onclick="display ('2')"></td>
-                <td><input type="button" class="button" value="3" onclick="display('3')"></td>
-                <td><input type="button" class="button" value="-" onclick="display('-')"></td>
-            
-            </tr>
+                    <tr>
+                        <td><button class="button" onclick="display('3')">3</button></td>
+                        <td><button class="button" onclick="display('2')">2</button></td>
+                        <td><button class="button" onclick="display('1')">1</button></td>
+                        <td><button class="button" onclick="display('-')">-</button></td>
+                    </tr>
 
-            <tr>
-                <td><input type="button" class="button" value="0" onclick="display('0')"></td>
-                <td><input type="button" class="button" value="." onclick="display ('.')"></td>
-                <td><input type="button" class="button" value="+" onclick="display('+')"></td>
-                <td><input type="button" class="button" value="=" onclick="evaluate()"></td>
-            
-            </tr>
+                    <tr>
+                        <td><button class="button" onclick="display('0')">0</button></td>
+                        <td><button class="button" onclick="display('.')">.</button></td>
+                        <td><button class="button" onclick="display('+')">+</button></td>
+                        <td><button class="button" onclick="solve()" id="btn">=</button></td>
+                    </tr>
 
-            </table>
+
+
+
+
+
+
+                </table>
+                <!-----------------------------table-ENDS--------------------------------------------------->
 
             </div>
-         </section>
-                
+            <!-----------------------------Calculator_second_STARTS--------------------------------------------------->
+
+
+        </section>
+        <!------------------------------Calculator_first_STARTS--------------------------------------------------->
+
+
+
+
+
+        <!-----------------------------MAIN-STARTS--------------------------------------------------->
+        <!-----------------------------MAIN-STARTS--------------------------------------------------->
+
+        <!-----------------------------MAIN-ENDS--------------------------------------------------->
     </main>
+
+    <!-----------------------------JAVASCRIPT-STARTS--------------------------------------------------->
     <script type="text/javascript" src="./index.js"></script>
+
+    <!-----------------------------JAVASCRIPT-STARTS--------------------------------------------------->
+
 </body>
+
 </html>
