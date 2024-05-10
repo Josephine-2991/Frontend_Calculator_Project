@@ -8,6 +8,6 @@ const solve = () => {
     val.value = result
 }
 
-let btn = document.getElementById("btn")
+/*let btn = document.getElementById("btn")
 btn.style.backgroundColor = "brown"
-btn.style.boxShadow = "1px 4px brown"
+btn.style.boxShadow = "1px 4px brown" */
